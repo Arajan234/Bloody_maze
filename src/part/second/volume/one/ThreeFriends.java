@@ -5,41 +5,41 @@ import java.util.Scanner;
 public class ThreeFriends {
     Scanner scan = new Scanner(System.in);
 
-    public void nachalaputi() {
+    public void thebeginningoftheway() {
         System.out.println("И вот 3 друга продолжали свой путь. В пути встретили мудрого человека!\n" +
                 "Варианты:\n" +
                 "    1 - убить его\n" +
                 "    2 - поговорить с ним");
         byte a = scan.nextByte();
         if (a == 1) {
-            ubitego();
+            killhim();
         }
         if (a == 2) {
-            pogovoritsnim();
+            talktohim();
         }
     }
 
-    void pogovoritsnim() {
+    private void killhim() {
+    }
+
+    void talktohim() {
         System.out.println("Они поговорили с ним и оказывется что он тоже ищет тот же книгу\n" +
                 "Варианты:\n" +
                 "    1 - убить его\n" +
                 "    2 - искать с ним книгу");
         byte a = scan.nextByte();
         if (a == 1) {
-            ubitego();
+            killhim();
         }
         if (a == 2) {
-            iskatsnimknigu();
+            lookforabookwithhim();
         }
     }
 
     private void ubitego() {
     }
 
-    private void iskatsnimknigu() {
-    }
-
-    public void chast1() {
+    void lookforabookwithhim() {
         System.out.println("они продолжали искать книгу вместо с ним. \n" +
                 "\n" +
                 "3 друга: Как вас зовут и как вы сюда попали?\n" +
@@ -57,20 +57,17 @@ public class ThreeFriends {
                 "    2 - сказать правду");
         byte e = scan.nextByte();
         if (e == 1) {
-            obmanut();
+            cheat();
         }
         if (e == 2) {
-            skazatpravdu();
+            tellthetruth();
         }
     }
 
-    private void skazatpravdu() {
+    private void tellthetruth() {
     }
 
-    private void obmanut() {
-    }
-
-    public void obmnaut() {
+    void cheat() {
         System.out.println("3 друга: Мы туристы, мы сюда пришли снимать этот лабиринт и потерялись. " +
                 "Но мы можем помочь вас найти книгу и так интереснее будет, если конечно вы не против!\n" +
                 "\n" +
@@ -88,34 +85,31 @@ public class ThreeFriends {
                 "    2 - подходят двое");
         byte a = scan.nextByte();
         if (a == 1) {
-            podxodyatvse();
+            allfit();
         }
         if (a == 2) {
-            podxodyatdvoe();
+            twofit();
         }
     }
 
-    private void podxodyatdvoe() {
+    private void allfit() {
     }
 
-    private void podxodyatvse() {
-    }
-
-    public void podxod() {
+    void twofit() {
         System.out.println("Подходили двое, убили паука, но потеряли друга\n" +
                 "Вошли вторую дырку\n" +
                 "    1 - подходят все\n" +
                 "    2 - подходят двое");
         byte a = scan.nextByte();
         if (a == 1) {
-            podxodyatvse();
+            allfit();
         }
         if (a == 2) {
-            podxodyatdvoe();
+            twofit1();
         }
     }
 
-    public void vibor() {
+    void twofit1() {
         System.out.println("подходили двое, убили паука и потеряли еще друга\n" +
                 "Выжил только главный герой и мудрый человек. Они вышли из дырки и увидели что паутина открывается. " +
                 "Они прошли через эту дыру и нашли книгу. Но книга нужна была и мудр-\n" +
@@ -129,14 +123,17 @@ public class ThreeFriends {
                 "    2 - Рассказать всю правду");
         byte a = scan.nextByte();
         if (a == 1) {
-            ubitego();
+            killawisemanandtakeabook();
         }
         if (a == 2) {
-            skazatpravdu();
+            tellthewholetruth();
         }
     }
 
-    public void konec() {
+    private void killawisemanandtakeabook() {
+    }
+
+    void tellthewholetruth() {
         System.out.println("Главный герой рассказал всю правду. И потому что он был мудрым и добрым," +
                 " он вернул книгу и они спокойно вышли из лабиринта и стали друзьями.\n");
     }
