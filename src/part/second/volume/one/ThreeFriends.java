@@ -12,42 +12,42 @@ public class ThreeFriends {
                 "    2 - поговорить с ним");
         byte a = scan.nextByte();
         if (a == 1) {
-            passby();
+            PassBy();
         }
         if (a == 2) {
-            talktohim();
+            TalkToHim();
         }
     }
 
-    void passby() {
+    void PassBy() {
         System.out.println("Они прошли мимо, но Мудрый человек остановил и спросил про книгу.\n" +
                 "Варианты:\n" +
                 "    1 - обмануть\n" +
                 "    2 - искать с ним книгу");
         byte a = scan.nextByte();
         if (a == 1) {
-            passbyy();
+            PassByy();
         }
         if (a == 2) {
-            lookforabookwithhim();
+            LookForABookWithHim();
         }
     }
 
-    void talktohim() {
+    void TalkToHim() {
         System.out.println("Они поговорили с ним и оказывется что он тоже ищет тот же книгу\n" +
                 "Варианты:\n" +
                 "    1 - обмануть\n" +
                 "    2 - искать с ним книгу");
         byte a = scan.nextByte();
         if (a == 1) {
-            passbyy();
+            PassByy();
         }
         if (a == 2) {
-            lookforabookwithhim();
+            LookForABookWithHim();
         }
     }
 
-    void passbyy() {
+    void PassByy() {
         System.out.println("Они обманули и не сказали про книгу, и продолжали путь вместе.\n" +
                 "\n" +
                 "3 друга: Как вас зовут и как вы сюда попали?\n" +
@@ -64,14 +64,14 @@ public class ThreeFriends {
                 "    2 - сказать правду");
         byte a = scan.nextByte();
         if (a == 1) {
-            cheat();
+            Cheat();
         }
         if (a == 2) {
-            tellthetruth();
+            TellTheTruth();
         }
     }
 
-    void lookforabookwithhim() {
+    void LookForABookWithHim() {
         System.out.println("они продолжали искать книгу вместо с ним. \n" +
                 "\n" +
                 "3 друга: Как вас зовут и как вы сюда попали?\n" +
@@ -89,14 +89,14 @@ public class ThreeFriends {
                 "    2 - сказать правду");
         byte a = scan.nextByte();
         if (a == 1) {
-            cheat();
+            Cheat();
         }
         if (a == 2) {
-            tellthetruth();
+            TellTheTruth();
         }
     }
 
-    void tellthetruth() {
+    void TellTheTruth() {
         System.out.println("3 друга: Мы сначала не сказали правду, но хотим честно сказать," +
                 " что мы тоже ищем эту книгу, но хотим вместе искать книгу если вы не против.\n" +
                 "\n" +
@@ -113,14 +113,14 @@ public class ThreeFriends {
                 "    2 - подходят двое");
         byte a = scan.nextByte();
         if (a == 1) {
-            allfit();
+            AllFit();
         }
         if (a == 2) {
-            twofit();
+            TwoFit();
         }
     }
 
-    void cheat() {
+    void Cheat() {
         System.out.println("3 друга: Мы туристы, мы сюда пришли снимать этот лабиринт и потерялись. " +
                 "Но мы можем помочь вас найти книгу и так интереснее будет, если конечно вы не против!\n" +
                 "\n" +
@@ -138,42 +138,42 @@ public class ThreeFriends {
                 "    2 - подходят двое");
         byte a = scan.nextByte();
         if (a == 1) {
-            allfit();
+            AllFit();
         }
         if (a == 2) {
-            twofit();
+            TwoFit();
         }
     }
 
-    void allfit() {
+    void AllFit() {
         System.out.println("Походили все, убили паука и все остались живы.\n" +
                 "Вошли вторую дырку\n" +
                 "    1 - подходят все\n" +
                 "    2 - подходят двое");
         byte a = scan.nextByte();
         if (a == 1) {
-            allfitt();
+            AllFitt();
         }
         if (a == 2) {
-            twofitt();
+            TwoFitt();
         }
     }
 
-    void twofit() {
+    void TwoFit() {
         System.out.println("Подходили двое, убили паука, но потеряли друга\n" +
                 "Вошли вторую дырку\n" +
                 "    1 - подходят все\n" +
                 "    2 - подходят двое");
         byte a = scan.nextByte();
         if (a == 1) {
-            allfitt();
+            AllFitt();
         }
         if (a == 2) {
-            twofitt();
+            TwoFitt();
         }
     }
 
-    void allfitt() {
+    void AllFitt() {
         System.out.println("Подходили все убили паука но потеряли уже 2 друга.\n" +
                 "\n" +
                 "Выжил только главный герой и мудрый человек. " +
@@ -189,14 +189,14 @@ public class ThreeFriends {
                 "    2 - Рассказать всю правду");
         byte a = scan.nextByte();
         if (a == 1) {
-            killawisemanandtakeabook();
+            KillAWiseManAndTakeABook();
         }
         if (a == 2) {
-            tellthewholetruth();
+            TellTheWholeTruth();
         }
     }
 
-    void twofitt() {
+    void TwoFitt() {
         System.out.println("подходили двое, убили паука и потеряли еще друга\n" +
                 "Выжил только главный герой и мудрый человек. Они вышли из дырки и увидели" +
                 " что паутина открывается. " +
@@ -211,18 +211,18 @@ public class ThreeFriends {
                 "    2 - Рассказать всю правду");
         byte a = scan.nextByte();
         if (a == 1) {
-            killawisemanandtakeabook();
+            KillAWiseManAndTakeABook();
         }
         if (a == 2) {
-            tellthewholetruth();
+            TellTheWholeTruth();
         }
     }
 
-    void killawisemanandtakeabook() {
+    void KillAWiseManAndTakeABook() {
         System.out.println("Главный герой убил Мудрого человека и забрал книгу и спокойно вышел из лабиринта.");
     }
 
-    void tellthewholetruth() {
+    void TellTheWholeTruth() {
         System.out.println("Главный герой рассказал всю правду. И потому что он был мудрым и добрым," +
                 " он вернул книгу и они спокойно вышли из лабиринта и стали друзьями.\n");
     }
