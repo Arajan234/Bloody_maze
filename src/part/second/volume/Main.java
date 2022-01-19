@@ -7,6 +7,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         ThreeFriends threeFriends = new ThreeFriends();
-        threeFriends.thebeginningoftheway();
+        threeFriends.theBeginNingOfTheWay();
     }
 }
