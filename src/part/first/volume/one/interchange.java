@@ -17,17 +17,23 @@ public class interchange {
 
         if (s1 == 1) {
             Inspection();
+        }else {
+            System.out.println("Такокго варианта нет");
+            beginning();
         }
 
         if (s1 == 2) {
             Ignore();
+        }else {
+            System.out.println("Такокго варианта нет");
+            beginning();
         }
 
     }
 
     void Inspection(){
         System.out.println("Убив укусанного, вы потеряли друга и деда. Стоит проститься с погибшими." );
-        history history = new history();
+        History history = new History();
         history.chest();
     }
     void Ignore(){

@@ -15,10 +15,16 @@ public class Council {
 
         if (s1 == 1) {
             Inspection();
+        }else {
+            System.out.println("Такокго варианта нет");
+            GrandfatherAdvice();
         }
 
         if (s1 == 2) {
             Ignore();
+        }else {
+            System.out.println("Такокго варианта нет");
+            GrandfatherAdvice();
         }
     }
 
