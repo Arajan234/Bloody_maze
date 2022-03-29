@@ -12,6 +12,7 @@ public class Council {
                 "2-Проигнорировать просьбу деда");
 
         byte s1 = scanner.nextByte();
+        byte s2 = scanner.nextByte();
 
         if (s1 == 1) {
             Inspection();
@@ -20,7 +21,7 @@ public class Council {
             GrandfatherAdvice();
         }
 
-        if (s1 == 2) {
+        if (s2 == 2) {
             Ignore();
         }else {
             System.out.println("Такокго варианта нет");
