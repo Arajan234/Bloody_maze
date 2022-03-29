@@ -2,7 +2,7 @@ package part.first.volume.one;
 
 import java.util.Scanner;
 
-public class ending {
+public class Ending {
     void chest() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("На вашу команду покатился огромный валун \n" +
@@ -12,10 +12,16 @@ public class ending {
 
         if (s1 == 1) {
             naughty();
+        }else {
+            System.out.println("Такокго варианта нет");
+            chest();
         }
 
         if (s1 == 2) {
             escape();
+        }else {
+            System.out.println("Такокго варианта нет");
+            chest();
         }
 
     }
