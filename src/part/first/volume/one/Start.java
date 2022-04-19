@@ -19,17 +19,12 @@ public class Start {
 
 
         int s1 = scanner.nextInt();
-        int s2 = scanner.nextInt();
 
             if (s1 == 1 ) {
-            uborkaPutini();
-        }else {
-            System.out.println("Такокго варианта нет");
-            vxodVLabitint();
-        }
-
-        if (s2 == 2) {
-            OsmotrPautini();
+                uborkaPutini();
+            }
+            if (s1 == 2){
+                OsmotrPautini();
         }else {
             System.out.println("Такокго варианта нет");
             vxodVLabitint();

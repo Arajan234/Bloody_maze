@@ -14,16 +14,11 @@ public class interchange {
                 "2-Не трогать и связать");
 
         byte s1 = scanner.nextByte();
-        byte s2 = scanner.nextByte();
 
         if (s1 == 1) {
             Inspection();
-        }else {
-            System.out.println("Такокго варианта нет");
-            beginning();
         }
-
-        if (s2 == 2) {
+        if (s1 == 2) {
             Ignore();
         }else {
             System.out.println("Такокго варианта нет");

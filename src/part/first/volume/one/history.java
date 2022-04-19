@@ -15,18 +15,10 @@ public class History {
 
         if (s1 == 1) {
             naughty();
-        }else {
-            System.out.println("Такокго варианта нет");
-            chest();
         }
-
         if (s1 == 2) {
             cast();
-        }else {
-            System.out.println("Такокго варианта нет");
-            chest();
         }
-
         if (s1 == 3) {
             self();
         } else {
